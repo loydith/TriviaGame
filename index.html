@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="container text-center shadow p-3 mb-5 bg-white rounded">
+    <!-- title row -->
+        <h1> Totally Trivial Trivia!</h1>
+        <br>
+        <div id="general">
+        <!-- Button Start -->
+        <button id="start">START</button>
+        <br>
+        <!-- show up when click start      -->
+        <div id="questions"> 
+        <!--  timerRuning  row-->
+        <h2 id="timer"> </h2>
+        <br>
+
+            <!-- Start to create the list where we would select-->
+
+            <div class="time-1">
+                <h3>What was the first full length CGI movie?</h3>
+                <label for ="bug"> A Bug's Life </label>
+                <input id="bug" type="radio" name="group1" value="A Bug's Life">
+                <label for ="monsters"> Monsters Inc. </label>
+                <input id="monsters" type="radio" name="group1" value="Monsters Inc." >
+                <label for ="toy"> Toy Story </label>
+                <input id="toy" type="radio" name="group1" value="Toy Story" >
+                <label for ="lion"> The lion king </label>
+                <input id="lion" type="radio" name="group1" value="The lion king">
+            </div>
+            <br>
+
+            <div class="time-2">
+                <h3>Which of these is NOT a name of one of the Spice Girls?</h3>
+                <label for ="sporty"> Sporty Spice </label>
+                <input id="sporty" type="radio" name="group2" value="Sporty Spice">
+                <label for ="fred"> Fred Spice </label>
+                <input id="fred" type="radio" name="group2" value="Fred Spice">
+                <label for ="scary"> Scary Spice </label>
+                <input id="scary" type="radio" name="group2" value="Scary Spice">
+                <label for ="posh"> Posh Spice </label>
+                <input id="posh" type="radio" name="group2" value="Posh Spice">
+            </div>
+            <br>
+                
+            <div class="time-3">
+                <h3>Which NBA team won the most titles in the 90s?</h3>
+                <label for ="new"> New York knicks </label>
+                <input id="new" type="radio" name="group3" value="New York knicks">
+                <label for ="portland"> Portland Traiblazers</label>
+                <input id="portland" type="radio" name="group3" value="Portland Traiblazers">
+                <label for ="angeles"> Los Angeles Lakers </label>
+                <input id="angeles" type="radio" name="group3" value="Los Angeles Lakers">
+                <label for ="chicago"> Chicago Bulls </label>
+                <input id="chicago" type="radio" name="group3" value="Chicago Bulls">
+           </div>
+            <br>
+
+            <div class="time-4">
+                <h3>Which group released the hit song, "Smell like team Spirit?</h3>
+                <label for ="nirvana"> Nirvana </label>
+                <input id="nirvana" type="radio" name="group4" value="Nirvana">
+                <label for ="backstreet"> Backstreet Boys </label>
+                <input id="backstreet" type="radio" name="group4" value="Backstreet Boys">
+                <label for ="Offspring"> The Offspring </label>
+                <input id="Offspring" type="radio" name="group4" value="The Offspring">
+                <label for ="doubt"> No Doubt </label>
+                <input id="doubt" type="radio" name="group4" value="No Doubt">
+            </div>
+            <br>
+
+            <div class="time-5">
+                <h3>Who created the 12 principles of animation?</h3>
+                <label for ="nirvana">  Ollie Johnston </label>
+                <input id="nirvana" type="radio" name="group5" value="Ollie Johnston">
+                <label for ="backstreet"> Thomas </label>
+                <input id="backstreet" type="radio" name="group5" value="Thomas">
+                <label for ="Offspring"> Frank</label>
+                 <input id="Offspring" type="radio" name="group5" value="Frank">
+                <label for ="doubt"> Oscar </label>
+                <input id="doubt" type="radio" name="group5" value="Oscar">
+            </div>
+            <br>
+
+            <div class="time-6">
+                <h3>Who is the father of animation?</h3>
+                <label for ="nirvana"> Blackton </label>
+                <input id="nirvana" type="radio" name="group6" value="Blackton">
+                <label for ="backstreet"> J. Stuart Blackton </label>
+                <input id="backstreet" type="radio" name="group6" value="J. Stuart Blackton">
+                <label for ="Offspring"> Kartoonist </label>
+                <input id="Offspring" type="radio" name="group6" value="Kartoonist">
+                <label for ="doubt"> British </label>
+                <input id="doubt" type="radio" name="group6" value="British ">
+            </div>
+            <br>
+
+            <div class="time-7">
+                <h3>Who made the first cartoon?</h3>
+                <label for ="nirvana">Astro Boy </label>
+                <input id="nirvana" type="radio" name="group7" value="Astro Boy">
+                <label for ="backstreet"> Mickey Mouse </label>
+                <input id="backstreet" type="radio" name="group7" value="Mickey Mouse">
+                <label for ="Offspring"> Émile Cohl </label>
+                <input id="Offspring" type="radio" name="group7" value="Émile Cohl">
+                <label for ="doubt"> Steamboat Willie </label>
+                <input id="doubt" type="radio" name="group7" value="Steamboat Willie">
+            </div>
+            <br>
+
+            <div class="time-8">
+                <h3>How old is Mickey Mouse?</h3>
+                <label for ="nirvana"> 80 years old</label>
+                <input id="nirvana" type="radio" name="group8" value="80 years old">
+                <label for ="backstreet"> 50 years old </label>
+                <input id="backstreet" type="radio" name="group8" value="50 years old">
+                <label for ="Offspring"> 90 years old </label>
+                <input id="Offspring" type="radio" name="group8" value="90 years old">
+                <label for ="doubt"> 91 years old </label>
+                <input id="doubt" type="radio" name="group8" value="91 years old">
+            </div>
+            <br>
+
+            <div class="time-9">
+                <h3>What's Mickey Mouse's original name?</h3>
+                <label for ="nirvana"> Nirvana </label>
+                <input id="nirvana" type="radio" name="group9" value="Nirvana">
+                <label for ="backstreet"> Lillian Mouse </label>
+                <input id="backstreet" type="radio" name="group9" value="Lillian Mouse">
+                <label for ="Offspring"> The Offspring </label>
+                <input id="Offspring" type="radio" name="group9" value="The Offspring">
+                <label for ="doubt"> Mortimer Mouse </label>
+                <input id="doubt" type="radio" name="group9" value="Mortimer Mouse">
+            </div>
+            <br>
+
+            <div class="time-10">
+                <h3>Who came first Mickey or Minnie?</h3>
+                <label for ="nirvana"> Ub Iwerks </label>
+                <input id="nirvana" type="radio" name="group10" value="Ub Iwerks">
+                <label for ="backstreet"> Backstreet Boys </label>
+                <input id="backstreet" type="radio" name="group10" value="Backstreet Boys">
+                <label for ="Offspring"> Minnie Mouse </label>
+                <input id="Offspring" type="radio" name="group10" value="Minnie Mouse">
+                <label for ="doubt"> Mickey Mouse </label>
+                <input id="doubt" type="radio" name="group10" value="Mickey Mouse">
+            </div>
+            <br>
+            <!-- the button done -->
+            <button id="done" type="submit">DONE</button>
+            </div>
+                <!-- box where we show up the results -->
+                <div id="box-result"> 
+                    <h2 id="final-result"></h2> <br>
+                    <h3 id="correct"> </h3><br>
+                    <h3 id="incorrect"> </h3><br>
+                    <h3 id="unselect"></h3>
+                    
+                    <!-- Button back-->
+                <button id="back">BACK</button>
+                <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
